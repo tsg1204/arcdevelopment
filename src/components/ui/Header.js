@@ -7,7 +7,8 @@ import { makeStyles } from '@material-ui/core/styles';
 // import IconButton from '@material-ui/core/IconButton';
 // import MenuIcon from '@material-ui/icons/Menu';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import logo from '../../assets/logo.svg';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -47,7 +48,7 @@ export default function Header(props) {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 480 139"
             >
-              <style>{`.st0{fill:none}.st1{fill:#fff}.st2{font-family:Raleway; font-weight: 300}.st6{fill:none;stroke:#000; stroke-width:3; stroke-miterlimit:10}`}</style>
+              <style>{`.st0{fill:none}.st1{fill:#fff}.st2{font-family:Roboto; font-weight: 300}.st6{fill:none;stroke:#000; stroke-width:3; stroke-miterlimit:10}`}</style>
               <path d="M448.07-1l-9.62 17.24-8.36 14.96L369.93 139H-1V-1z" />
               <path className="st0" d="M-1 139h479.92v.01H-1z" />
               <text
@@ -89,6 +90,13 @@ export default function Header(props) {
                 d="M457-17l-8.93 16-9.62 17.24-8.36 14.96L369.93 139l-.01.01L361 155"
               />
             </svg>
+            <Tabs>
+              <Tab label="Home" />
+              <Tab label="Services" />
+              <Tab label="The Revolution" />
+              <Tab label="About Us" />
+              <Tab label="Contact Us" />
+            </Tabs>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
