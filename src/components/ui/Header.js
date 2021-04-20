@@ -32,6 +32,14 @@ const useStyles = makeStyles((theme) => ({
     height: '7em',
     textTransform: 'none',
   },
+  tabContainer: {
+    marginLeft: 'auto',
+  },
+  tab: {
+    ...theme.typography.tab,
+    minWidth: 10,
+    marginLeft: '25px',
+  },
 }));
 
 export default function Header(props) {
@@ -90,12 +98,12 @@ export default function Header(props) {
                 d="M457-17l-8.93 16-9.62 17.24-8.36 14.96L369.93 139l-.01.01L361 155"
               />
             </svg>
-            <Tabs>
-              <Tab label="Home" />
-              <Tab label="Services" />
-              <Tab label="The Revolution" />
-              <Tab label="About Us" />
-              <Tab label="Contact Us" />
+            <Tabs className={classes.tabContainer}>
+              <Tab className={classes.tab} label="Home" />
+              <Tab className={classes.tab} label="Services" />
+              <Tab className={classes.tab} label="The Revolution" />
+              <Tab className={classes.tab} label="About Us" />
+              <Tab className={classes.tab} label="Contact Us" />
             </Tabs>
           </Toolbar>
         </AppBar>
